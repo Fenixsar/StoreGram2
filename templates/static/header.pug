@@ -1,1 +1,26 @@
-h1 #{id}
+header#header.clearfix  
+    ul.h-inner
+        li.hi-trigger.ma-trigger(
+            data-ma-action="sidebar-open" 
+            data-ma-target="#sidebar"
+        )
+            .line-wrap
+                .line.top
+                .line.center
+                .line.bottom
+        li.hi-logo
+            a(href='') 
+                img(
+                    style="margin-top: -3px;"
+                    src="img/logo.png" alt="" width="29px" class="m-r-15 hidden-xs"
+                )
+                span.hidden-sm.hidden-xs StoreGram - 
+                | Telegram боты и каналы
+
+        li.pull-right   
+            a(
+                data-toggle="modal" 
+                href="#modalDefault"
+            ) 
+                i.mdi.mdi-login
+                |  Войти

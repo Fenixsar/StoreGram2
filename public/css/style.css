@@ -1,0 +1,175 @@
+body {
+    font: 12px/18px 'Open Sans',"Lucida Grande","Lucida Sans Unicode",Arial,Helvetica,Verdana,sans-serif;
+    text-transform: none;
+}
+
+/*HEADER*/
+
+#header {
+    background-color: #3A6D99;
+    min-height: 50px;
+}
+.h-inner {
+    
+}
+.hi-logo {
+    text-transform: none;
+}
+#header a {
+    padding: 7px 10px;
+    color: #fff;
+    display: block; 
+    font-size: 16px;
+}
+
+/*HEADER*/
+
+
+/*SIDEBAR*/
+
+#sidebar {
+    width: 200px;
+}
+.main-menu {
+    width: 200px;
+}
+.main-menu li a:hover {
+    background-color: #3A6D99;
+    color: white;
+}
+
+.btn-subscribe {
+    display: block;    
+    height: 40px;
+    background-image: url(../img/telegram_widget.png);
+    background-size: 385px 40px;
+    margin: 15px 5px;
+}
+.btn-subscribe:hover {    
+    background-color: white;
+    background-position: 190px 0;
+    border-radius: 3px;
+    
+}
+.btn-sucbscribe:active {    
+    background-position: 198px 0;      
+}
+.hi-logo a {
+    text-transform: none;
+}
+.vk-community {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+}
+.vk-community-avatar {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    color: #3A6D99;
+    background-color: #3A6D99;
+    width: 34px;
+    height: 34px;    
+}
+.vk-community-avatar img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 23px;
+    height: 23px;    
+    color: #3A6D99;
+    background-color: #3A6D99;
+}
+.vk-community-link {
+    color: #09497f;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 700;    
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;    
+}
+li .vk-community .vk-community-link:hover {
+    text-decoration: underline;
+    color: #09497f;
+    background-color: white;
+}
+.vk-community-descr {
+    line-height: 17px;    
+    word-wrap: break-word;
+}
+.main-menu li .vk-community-subscribers {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    height: 10px;
+    margin-top: 10px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    padding-left: 10px;   
+    color: #656565;
+    font-size: 12px;
+    line-height: 18px; 
+    height: 10px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.main-menu li .vk-community-subscribers:hover {
+    background-color: white;
+    color: #656565;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.btn-subscribe-vk {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: px;
+    display: block;    
+    padding: 7px 16px 8px;
+    margin: 10px;
+    font-size: 12.5px;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    vertical-align: top;
+    line-height: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    background-color: #5e81a8;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 89%;
+}
+
+/*SIDEBAR*/
+
+/*CONTENT*/
+
+/*
+@media (min-width: 1280px)
+#content:not(.content-alt) {
+    padding-left: 215px;
+    padding-right: 15px;
+}
+@media (min-width: 1200px)
+.container {
+    width: 100%;
+}
+
+#content {
+    padding-left: -100px;
+}
+*/
+
+/*CONTENT*/
