@@ -1,6 +1,11 @@
 module.exports = function(app) {
 	app.get('/', function(req, res) {
 		res.render('index');
+	});	
+
+	app.get('/bot_stat', function(req, res) {
+
+		res.send('GramMetricaBot/bot_stat');
 	});
 
 	app.get('/card/*', function(req, res) {
