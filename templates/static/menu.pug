@@ -1,6 +1,18 @@
-section#main    
+section#main
     aside#sidebar.sidebar.c-overflow
         ul.main-menu
+            li.visible-xs(
+              data-ma-action="sidebar-close"
+            )
+                a(
+                  href="#modalDefault"
+                  data-toggle="modal"
+                ) Войти
+                    i.mdi.mdi-login
+            hr.m-t-5.m-b-5.visible-xs(
+                style="border-color: #3a6d99; border-width: 3px;"
+            )
+
             li
                 a(href="") Главная
                     i.mdi.mdi-home
@@ -21,12 +33,12 @@ section#main
             hr.m-t-5.m-b-5
             li.sub-menu
                 a(
-                    href="" 
+                    href=""
                     data-ma-action="submenu-toggle"
                 ) Категории
                     i.mdi.mdi-folder-multiple
                 ul
-                    li  
+                    li
                         a(href="") Textual menu
                         a(href="") Textual menu
                         a(href="") Textual menu

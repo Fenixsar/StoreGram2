@@ -48,22 +48,6 @@ $(document).ready(function() {
 
                 break;
 
-                /*-------------------------------------------
-                    Login Window Switch
-                ---------------------------------------------*/
-            case 'login-switch':
-                var loginblock = $this.data('ma-block');
-                var loginParent = $this.closest('.lc-block');
-
-                loginParent.removeClass('toggled');
-
-                setTimeout(function() {
-                    $(loginblock).addClass('toggled');
-                });
-
-                break;
-
-
         }
     });
 });
@@ -76,19 +60,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     $('html').addClass('ismobile');
 }
 
-$(window).load(function() {
-    /*----------------------------------------------------------
-        Page Loader
-     -----------------------------------------------------------*/
-    if (!$('html').hasClass('ismobile')) {
-        if ($('.page-loader')[0]) {
-            setTimeout(function() {
-                $('.page-loader').fadeOut();
-            }, 500);
-
-        }
-    }
-})
 
 $(document).ready(function() {
 
@@ -107,13 +78,6 @@ $(document).ready(function() {
                 preventDefault: true
             }
         });
-    }
-
-    if (!$('html').hasClass('ismobile')) {
-        //On Custom Class
-        if ($('.c-overflow')[0]) {
-            scrollBar('.c-overflow', 'minimal-dark', 'y');
-        }
     }
 
 
@@ -159,111 +123,5 @@ $(document).ready(function() {
             }
         });
     }
-
-
-
-    /*----------------------------------------------------------
-        Auto Size Textare
-    -----------------------------------------------------------*/
-    if ($('.auto-size')[0]) {
-        autosize($('.auto-size'));
-    }
-
-
-
-
-
-    /*----------------------------------------------------------
-        NoUiSlider (Input Slider)
-    -----------------------------------------------------------*/
-    //Basic
-    if ($('#input-slider')[0]) {
-        var slider = document.getElementById('input-slider');
-
-        noUiSlider.create(slider, {
-            start: [20],
-            connect: 'lower',
-            range: {
-                'min': 0,
-                'max': 100
-            }
-        });
-    }
-
-    //Range
-    if ($('#input-slider-range')[0]) {
-        var sliderRange = document.getElementById('input-slider-range');
-
-        noUiSlider.create(sliderRange, {
-            start: [40, 70],
-            connect: true,
-            range: {
-                'min': 0,
-                'max': 100
-            }
-        });
-    }
-
-    //Range with value
-    if ($('#input-slider-value')[0]) {
-        var sliderRangeValue = document.getElementById('input-slider-value');
-
-        noUiSlider.create(sliderRangeValue, {
-            start: [10, 50],
-            connect: true,
-            range: {
-                'min': 0,
-                'max': 100
-            }
-        });
-
-        sliderRangeValue.noUiSlider.on('update', function(values, handle) {
-            document.getElementById('input-slider-value-output').innerHTML = values[handle];
-        });
-    }
-
-
-
-    /*-----------------------------------------------------------
-        Link prevent
-    -----------------------------------------------------------*/
-    $('body').on('click', '.a-prevent', function(e) {
-        e.preventDefault();
-    });
-
-
-    /*----------------------------------------------------------
-        Bootstrap Accordion Fix
-    -----------------------------------------------------------*/
-    if ($('.collapse')[0]) {
-
-        //Add active class for opened items
-        $('.collapse').on('show.bs.collapse', function(e) {
-            $(this).closest('.panel').find('.panel-heading').addClass('active');
-        });
-
-        $('.collapse').on('hide.bs.collapse', function(e) {
-            $(this).closest('.panel').find('.panel-heading').removeClass('active');
-        });
-
-        //Add active class for pre opened items
-        $('.collapse.in').each(function() {
-            $(this).closest('.panel').find('.panel-heading').addClass('active');
-        });
-    }
-
-
-
-
-    /*-----------------------------------------------------------
-        IE 9 Placeholder
-    -----------------------------------------------------------*/
-    if ($('html').hasClass('ie9')) {
-        $('input, textarea').placeholder({
-            customClass: 'ie9-placeholder'
-        });
-    }
-
-
 
 });
