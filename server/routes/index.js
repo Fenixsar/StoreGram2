@@ -5,7 +5,12 @@ module.exports = function(app) {
 
 	app.get('/bot_stat', function(req, res) {
 
-		res.send('GramMetricaBot/bot_stat');
+		res.render('GramMetricaBot/bot_stat');
+	});
+
+	app.get('/bot_stat_full', function(req, res) {
+
+		res.render('GramMetricaBot/bot_stat_full');
 	});
 
 	app.get('/card/*', function(req, res) {
