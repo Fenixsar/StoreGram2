@@ -1,21 +1,96 @@
-div.bots
-  div.block-header(
-    style="padding-left:17px;"
-  )
-    h1
-      a(href="") Лучшие боты
-  div.row.cards
-    div.col-card.col-sm-4.col-xs-6.col-md-3.col-lg-20
-      a(href="")
-        div.card.card-btn
-          div.card-header.p-b-5.p-l-15.p-r-10.p-t-15
-            div.star-rating-block
-              div.star-rating
-                div.star-rating-true(style="width: 100%;")
-            h2 StoreGram.Metrica - Статистика
-            small.hidden-xxs Технологии
-          div.card-body.card-padding.descriptiond.p-10
-            img.cadr-img.card-img-xxs(
-              src="img/bot/@tap2bot.jpg"
-            )
-            p.description.hidden-xxs Бот для ежедневного сбора статистики твоего канала или группы.
+extends static/layout
+block styles
+  link(rel='stylesheet', href='/css/card.css')
+block content
+  section#content
+    div.container
+      div.block-header
+        h1
+          a(href="") Боты
+          |  -
+          a(href="")  Другое
+      div.row
+        div.col-lg-4.col-md-5.col-sm-6
+          div.card
+            div.card-header.p-b-5
+              h2 Tap2Bot
+                small
+                  span.pull-right
+                  | Другое
+            div.card-body.card-padding.p-b-5
+              img(
+                  alt=""
+                  src="../img/bot/@tap2bot.jpg"
+              )
+              p.m-t-5.m-b-0 Тип:
+                small  Бот
+              p.m-t-0.m-b-0 Опубликовано:
+                small  19.06.2016
+              p.m-t-0.m-b-0 Язык:
+                small  Русский
+              p.m-t-0.m-b-0 Переходов:
+                small  99
+            div.card-body.card-padding.p-10
+              hr.m-t-5.m-b-5
+              a.addto(href="") Перейти
+              div.m-t-10
+                div.star-rating
+                  div.star-rating-true
+                p.comm-qt (1
+                  i.mdi.mdi-account
+                  | )
+        div.col-lg-8.col-md-7.col-sm-6
+          div.card
+            div.card-header
+              div
+                h2 Описание
+            div.card-body.card-padding 🔥Флибуста, РуТрекер и кино в ВКонтакте, Facebook и Telegram:
+
+      div.card
+        div.card-header
+          div
+            h2 Ваш отзыв
+        div.card-body.card-padding
+          div.form-group
+            label.radio.radio-inline.m-r-10
+              input(name="inlineRadioOptions" type="radio")
+              i.input-helper
+              | 1
+            label.radio.radio-inline.m-r-10
+              input(name="inlineRadioOptions" type="radio")
+              i.input-helper
+              | 2
+            label.radio.radio-inline.m-r-10
+              input(name="inlineRadioOptions" type="radio")
+              i.input-helper
+              | 3
+            label.radio.radio-inline.m-r-10
+              input(name="inlineRadioOptions" type="radio")
+              i.input-helper
+              | 4
+            label.radio.radio-inline.m-r-10
+              input(name="inlineRadioOptions" type="radio")
+              i.input-helper
+              | 5
+          div.form-group(style="margin-bottom:30px;")
+            div.fg-line
+              textarea.form-control.ng-untouched.ng-pristine.ng-valid(placeholder="Текст отзыва" rows="5")
+            a.addto(style="margin: 10px auto;display: block;width: 91px; cursor: pointer;") Отправить
+      div.card
+        div.card-header
+          div
+            h2 Отзывы
+        div.card-body.card-padding
+          div
+            div.f-14
+              p
+                span.f-700 Voloshchuk
+                span.timeago.f-13.m-r-15  -
+                  time.timeago(datetime="2016-12-07T14:04:27.811Z")  5 дней назад
+                span.text-nowrap
+                  i.mdi.mdi-star.text-warning
+                  i.mdi.mdi-star.text-warning
+                  i.mdi.mdi-star.text-warning
+                  i.mdi.mdi-star.text-warning
+                  i.mdi.mdi-star.text-warning
+              p Огонь!
