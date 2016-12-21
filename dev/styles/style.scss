@@ -7,10 +7,10 @@ body {
 
 #header {
     background-color: #3A6D99;
-    min-height: 50px;
+    min-height: 50px;  
 }
 .h-inner {
-    
+
 }
 .hi-logo {
     text-transform: none;
@@ -18,7 +18,7 @@ body {
 #header a {
     padding: 7px 10px;
     color: #fff;
-    display: block; 
+    display: block;
     font-size: 16px;
 }
 
@@ -39,20 +39,20 @@ body {
 }
 
 .btn-subscribe {
-    display: block;    
+    display: block;
     height: 40px;
     background-image: url(../img/telegram_widget.png);
     background-size: 385px 40px;
     margin: 15px 5px;
 }
-.btn-subscribe:hover {    
+.btn-subscribe:hover {
     background-color: white;
     background-position: 190px 0;
     border-radius: 3px;
-    
+
 }
-.btn-sucbscribe:active {    
-    background-position: 198px 0;      
+.btn-sucbscribe:active {
+    background-position: 198px 0;
 }
 .hi-logo a {
     text-transform: none;
@@ -69,14 +69,14 @@ body {
     color: #3A6D99;
     background-color: #3A6D99;
     width: 34px;
-    height: 34px;    
+    height: 34px;
 }
 .vk-community-avatar img {
     position: absolute;
     top: 5px;
     left: 5px;
     width: 23px;
-    height: 23px;    
+    height: 23px;
     color: #3A6D99;
     background-color: #3A6D99;
 }
@@ -84,11 +84,11 @@ body {
     color: #09497f;
     line-height: 18px;
     font-size: 13px;
-    font-weight: 700;    
+    font-weight: 700;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: inline-block;    
+    display: inline-block;
 }
 li .vk-community .vk-community-link:hover {
     text-decoration: underline;
@@ -96,7 +96,7 @@ li .vk-community .vk-community-link:hover {
     background-color: white;
 }
 .vk-community-descr {
-    line-height: 17px;    
+    line-height: 17px;
     word-wrap: break-word;
 }
 .main-menu li .vk-community-subscribers {
@@ -108,11 +108,11 @@ li .vk-community .vk-community-link:hover {
     margin-top: 10px;
     padding-top: 1px;
     padding-bottom: 20px;
-    padding-left: 10px;   
+    padding-left: 10px;
     color: #656565;
     font-size: 12px;
-    line-height: 18px; 
-    height: 10px;    
+    line-height: 18px;
+    height: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -129,7 +129,7 @@ li .vk-community .vk-community-link:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: px;
-    display: block;    
+    display: block;
     padding: 7px 16px 8px;
     margin: 10px;
     font-size: 12.5px;

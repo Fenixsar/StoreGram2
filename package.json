@@ -1,21 +1,27 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "server": "supervisor -w server server/index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
-    "mdi": "^1.7.22",
-    "nconf": "^0.8.4",
-    "pug": "^2.0.0-beta6"
-  },
-  "devDependencies": {
-    "gulp-sass": "^2.3.2"
-  }
+    "name": "test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "supervisor -w server server/index.js",
+        "watch": "./node_modules/.bin/gulp",
+        "build": "./node_modules/.bin/gulp build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cookie-parser": "^1.4.3",
+        "express": "^4.14.0",
+        "mdi": "^1.7.22",
+        "nconf": "^0.8.4",
+        "pug": "^2.0.0-beta6"
+    },
+    "devDependencies": {
+        "gulp": "github:gulpjs/gulp#4.0",
+        "gulp-cssmin": "^0.1.7",
+        "gulp-load-plugins": "^1.4.0",
+        "gulp-sass": "^2.3.2",
+        "gulp-uglify": "^2.0.0"
+    }
 }
