@@ -620,6 +620,13 @@ html {
   line-height: transparent;
 }
 
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
 .hi-menu > li > a > .him-label,
 .m-sidebar header h2 {
   text-transform: uppercase;
@@ -1032,7 +1039,7 @@ h6 small {
 }
 
 #header .hi-logo a {
-  padding: 7px 10px;
+  padding: 8px 10px;
 }
 
 @media (max-width: 1279px) {
@@ -1447,6 +1454,21 @@ body {
   color: white;
 }
 
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    border-radius: 2px;
+    user-select: none;
+}
+
 .btn-subscribe {
   display: block;
   height: 40px;
@@ -1603,7 +1625,7 @@ bots {
 }
 
 .card-header h2 {
-  
+
 }
 
 .star-rating-block {
@@ -1617,3 +1639,7 @@ bots {
 }
 
 /*CARDS-BOTS*/
+
+.has-error .fg-line:after {
+  background: #F44336;
+}

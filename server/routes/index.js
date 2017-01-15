@@ -10,6 +10,13 @@ module.exports = function(app) {
 		});
 	});
 
+	app.get('/add/*', function(req, res) {
+		//Обращаемся к базе, получаем данные
+		res.render('add', {
+			id: req.params[0]
+		});
+	});
+
 	app.get('*', function(req, res) {
 		res.send('404');
 	});

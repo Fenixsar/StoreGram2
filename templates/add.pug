@@ -1,0 +1,76 @@
+extends static/layout
+block styles
+  link(rel='stylesheet', href='/css/card.css')
+  link(rel='stylesheet', href='/css/add.css')
+block content
+    section#content
+      div.container
+        div.block-header
+          h1 Главная -
+            a(href="")  Мои предложения
+        div.card
+          div.card-header
+            h2 Добавление в каталог
+          div.card-body.card-padding
+            p.f-700.m-b-10.text-primary Тип
+            div.form-group.m-b-15
+              label.radio.radio-inline.m-r-20
+                input(name="type" type="radio")
+                i.input-helper
+                | Бот
+              label.radio.radio-inline.m-r-20
+                input(name="type" type="radio")
+                i.input-helper
+                | Канал
+            p.f-700.m-b-5.text-primary
+              |  ID
+              br
+            div.form-group.m-b-15.fg-line
+              input.form-control.input-sm(maxlength="30" placeholder="Например: @storegrambot, gramru" type="text")
+            p.f-700.m-b-5.text-primary Название
+            div.form-group.m-b-15.fg-line
+              input.form-control.input-sm(maxlength="50" placeholder="Например: StoreGram Bot" type="text")
+            p.f-700.m-b-5.text-primary Категория
+            div.form-group.m-b-15
+              div.fg-line
+                div.select(style="color:#5E5E5E;")
+                  select.form-control
+                    option(disabled="disabled" value="") Выберите...
+                    option(value="Технологии") Технологии (38)
+                    option(value="Новости и СМИ") Новости и СМИ (35)
+                    option(value="Еда и кулинария") Еда и кулинария (11)
+                    option(value="Блоги") Блоги (11)
+                    option(value="Наука и образование") Наука и образование (45)
+                    option(value="Юмор и развлечения") Юмор и развлечения (54)
+                    option(value="Исскуство и фото") Исскуство и фото (27)
+                    option(value="Для взрослых") Для взрослых (22)
+                    option(value="Игры и приложения") Игры и приложения (41)
+            p.f-700.m-b-10.text-primary Язык
+            div.form-group.m-b-15
+              label.checkbox.checkbox-inline.m-r-20
+                input(type="checkbox")
+                i.input-helper
+                | Русский
+              label.checkbox.checkbox-inline.m-r-20
+                input(type="checkbox")
+                i.input-helper
+                | Английский
+            p.f-700.m-b-5.text-primary Анонс
+            div.form-group.m-b-15.fg-line
+              input.form-control.input-sm(maxlength="100" placeholder="Краткое описание (до 100 символов)" type="text")
+            p.f-700.m-b-5.text-primary Описание
+            div.form-group.m-b-15
+              div.fg-line
+                textarea.form-control(maxlength="10000" placeholder="Текст описания..." rows="5")
+            div
+              p.f-700.m-b-10.text-primary Изображение:
+              div.fileinput.fileinput-new(data-provides="fileinput")
+                div.fileinput-preview.thumbnail(data-trigger="fileinput")
+                div
+                  span.btn.btn-info.btn-file.waves-effect
+                    span.fileinput-new Выбрать
+                    input(name="..." type="hidden" value="")
+                    input#inputImg(name="" type="file")
+                  a.btn.btn-danger.fileinput-exists.waves-effect(data-dismiss="fileinput" href="#") Удалить
+            div.row
+              a.addto(style="margin: 10px auto;display: block;width: 83px;") Добавить

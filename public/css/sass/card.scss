@@ -434,4 +434,28 @@ vertical-align: middle;
   color: #333;
 }
 
+.checkbox .input-helper:after {
+  opacity: 0;
+  filter: alpha(opacity=0); 
+  transform: scale(0);
+  content: '\f26b';
+  font-family: 'Material-Design-Iconic-Font';
+  position: absolute;
+  font-size: 12px;
+  left: 2px;
+  top: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.input-helper:before,
+.input-helper:after,
+.checkbox label:before,
+.radio label:before,
+.radio-inline:before,
+.checkbox-inline:before {
+  transition: all;
+  transition-duration: 250ms;
+}
+
 // CHECKBOX
